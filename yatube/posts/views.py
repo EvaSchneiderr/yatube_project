@@ -3,8 +3,9 @@ from django.http import HttpResponse
 
 
 # Главная страница
-def index(request):    
-    return HttpResponse('Главная страница')
+def index(request):
+    template = 'posts/index.html'
+    return render(request, template)
 
 def group_posts(request):
     return HttpResponse('Посты, отфильтрованные по группам')
