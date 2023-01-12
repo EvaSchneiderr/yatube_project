@@ -23,8 +23,7 @@ class Group(models.Model):
     description = models.TextField()
     
     def __str__(self) -> str:
-        return self.title  
-    
+        return self.title
 
 
 
